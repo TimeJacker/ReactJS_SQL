@@ -11,7 +11,7 @@ module.exports = {
         lastName: 'Anh',
         address: 'USA',
         phonenumber: '0385566861',
-        gender: 'Male',
+
         createdAt: new Date(),
         updatedAt: new Date(),
       },
