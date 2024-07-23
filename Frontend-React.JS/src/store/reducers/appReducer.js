@@ -4,7 +4,8 @@ const initContentOfConfirmModal = {
     isOpen: false,
     messageId: "",
     handleFunc: null,
-    dataFunc: null
+    dataFunc: null,
+
 }
 
 const initialState = {
@@ -30,6 +31,12 @@ const appReducer = (state = initialState, action) => {
                     ...state.contentOfConfirmModal,
                     ...action.contentOfConfirmModal
                 }
+            }
+        case actionTypes.CHANGE_lANGUAGE:
+            console.log('check actions redux:   ', action)
+            return {
+                ...state,
+                language: action.language,
             }
         default:
             return state;
